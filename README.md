@@ -1,4 +1,7 @@
 # S2FjcGVyLVdpa2llbA-
+
+[![Build Status](https://travis-ci.com/kwikiel/S2FjcGVyLVdpa2llbA-.svg?branch=master)](https://travis-ci.com/kwikiel/S2FjcGVyLVdpa2llbA-)
+
 Zadanie rekrutacyjne GWP
 
 Uwagi: 
