@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"io"
 	"io/ioutil"
 	"log"
 	"net/http"
@@ -128,12 +129,29 @@ func fetcher(w http.ResponseWriter, r *http.Request) {
 
 }
 
+func greeter(w http.ResponseWriter, r *http.Request) {
+	w.WriteHeader(200)
+	fmt.Fprintf(w, "hello\n")
+
+}
+
+func HealthCheckHandler(w http.ResponseWriter, r *http.Request) {
+	// A very simple health check.
+	w.WriteHeader(http.StatusOK)
+	w.Header().Set("Content-Type", "application/json")
+
+	// In the future we could report back on the status of our DB, or our cache
+	// (e.g. Redis) by performing a simple PING, and include them in the response.
+	io.WriteString(w, `{"alive": true}`)
+}
+
 func main() {
 	server := http.Server{
-		Addr: "127.0.0.1:8080",
+		Addr: "0.0.0.0:8080",
 	}
+	http.HandleFunc("/", greeter)
 	http.HandleFunc("/api/fetcher", fetcher)
-	http.HandleFunc("/api/fetcher/", fetcherhistory)
+	http.HandleFunc("/api/fetcher/history", fetcherhistory)
 	http.HandleFunc("/worker", worker)
 
 	server.ListenAndServe()
