@@ -15,3 +15,9 @@ Zasadniczo to lepiej było by użyć bazy danych + stworzyć narzędzie comman
 - Historia pobrań pod /api/fetcher/ zwraca wszystkie obiekty. 
 
 - Worker jest stworzony w oparciu o goroutine 
+
+<div style="width: 600px;">
+<iframe width='600' height='300' frameborder='0' src='//share.loader.io/reports/da888b0775a15cb03cdf6b78e17fd223/widget/results/5bdfc51e9da51449f41c3e788adeabac'></iframe>
+<div style="width: 100%; text-align: right;">
+<a href="http://loader.io/reports/da888b0775a15cb03cdf6b78e17fd223/results/5bdfc51e9da51449f41c3e788adeabac" target="_blank" style="padding: 0 10px 10px 0; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 14px;">View on loader.io</a>
+</div></div>
