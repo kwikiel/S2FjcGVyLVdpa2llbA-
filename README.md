@@ -16,5 +16,9 @@ Zasadniczo to lepiej było by użyć bazy danych + stworzyć narzędzie comman
 
 - Worker jest stworzony w oparciu o goroutine 
 
+
+Performance REST: 1k operacji POST na sekundę - 1.1% błędów
+Perfromance scrapera: TODO
+
 ![load test](https://i.imgur.com/7leYgIw.png)
 
