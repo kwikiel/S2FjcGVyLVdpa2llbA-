@@ -8,6 +8,9 @@ Uwagi:
 - Obsługa błędów typu 400, 413 nie jest zaimplementowana: prawdopodobnie jest to bardzo proste przy użyciu chi, 
 tutaj jednak chciałem skupić się na nauczeniu się Go
 
+Update: Zmodyfikowałem przykładową aplikację Chi [https://github.com/go-chi/chi/pull/459](https://github.com/go-chi/chi/pull/459) 
+
+
 - Worker jest uruchamiany poprzez /worker 
 
 Zasadniczo to lepiej było by użyć bazy danych + stworzyć narzędzie command line do obsługi / włączania / wyłączanie workera
